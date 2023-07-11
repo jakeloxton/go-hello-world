@@ -12,6 +12,6 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	log.Println("handler hit!")
+	log.Println("handler hit...")
 	fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:])
 }
